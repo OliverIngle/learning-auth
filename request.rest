@@ -1,0 +1,27 @@
+### CHECK API IS ONLINE
+
+GET http://localhost:8080/
+
+### LIST ALL USERS
+
+GET http://localhost:8080/users
+
+### CREATE NEW USER
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name": "user1",
+    "password": "mypass"
+}
+
+### AUTHENTICATE USER
+
+POST http://localhost:8080/users/login
+Content-Type: application/json
+
+{
+    "name": "user1",
+    "password": "mypass"
+}
